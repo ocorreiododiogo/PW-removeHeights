@@ -4,7 +4,7 @@ Processwire Remove Heights Text Formatter
 Textformatter module for ProcessWire that removes the Height attribute from RTE fields
 
 
-WHAT IT DOES
+What it does
 ------------
 
 This text formatter module removes the Height attribute from image tags.
@@ -12,7 +12,7 @@ This might be useful in cases when Rich text editors add the Height attribute to
 
 
 
-HOW TO INSTALL AND USE
+How to install and use
 ----------------------
 
 -> to add later
