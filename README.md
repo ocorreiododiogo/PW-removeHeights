@@ -1,4 +1,4 @@
-Processwire Remove Heights Text Formatter
+Remove Heights Textformatter for ProcessWire
 =========================================
 
 Textformatter module for ProcessWire that removes the Height attribute from RTE fields
