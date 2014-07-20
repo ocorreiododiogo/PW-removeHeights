@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * ProcessWire Remove Heights Textformatter
+ *
+ *
+ *
+ */
+
+class TextformatterRemoveHeights extends Textformatter {
+
+	public static function getModuleInfo() {
+		return array(
+			'title' => 'Remove Heights Textformatter',
+			'version' => 100,
+			'summary' => "removes the Height attribute from image tags",
+			'href' => '',
+		);
+	}
+
+	public function format(&$str) {
+
+	    $str = preg_replace( '/(height)="\d*"\s/', "", $str );
+
+	}
+}
