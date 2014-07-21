@@ -12,7 +12,7 @@ class TextformatterRemoveHeights extends Textformatter {
 	public static function getModuleInfo() {
 		return array(
 			'title' => 'Remove Heights Textformatter',
-			'version' => 100,
+			'version' => 101,
 			'summary' => "removes the Height attribute from image tags",
 			'href' => '',
 		);
