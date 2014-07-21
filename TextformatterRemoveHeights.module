@@ -26,8 +26,8 @@ class TextformatterRemoveHeights extends Textformatter {
 		$images = $dom->getElementsByTagName('img');
 
 		foreach ($images as $image) {
-		  $image->removeAttribute('height');
-	    }
+			$image->removeAttribute('height');
+	    	}
 
 		$str = $dom->saveHTML();
 
