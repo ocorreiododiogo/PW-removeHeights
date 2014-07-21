@@ -20,7 +20,16 @@ class TextformatterRemoveHeights extends Textformatter {
 
 	public function format(&$str) {
 
-	    $str = preg_replace( '/(height)="\d*"\s/', "", $str );
+		$dom = new DOMDocument();
+		$dom->loadHTML(mb_convert_encoding($str, 'HTML-ENTITIES', 'UTF-8'));
+		$dom->preserveWhiteSpace = false;
+		$images = $dom->getElementsByTagName('img');
+
+		foreach ($images as $image) {
+		  $image->removeAttribute('height');
+	    }
+
+		$str = $dom->saveHTML();
 
 	}
 }
